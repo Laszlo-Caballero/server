@@ -16,5 +16,6 @@ const sqlC = () => {
       console.log("SE CONECTO CORRECTAMENTE");
     }
   });
+  return connection;
 };
 module.exports = sqlC;

@@ -10,6 +10,7 @@ console.clear();
 sqlC();
 
 app.use("/api", require("./routers"));
+app.use(express.static("storage"));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

@@ -1,8 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const { pedirDatos } = require("../controllers/albumes");
 
-router.get("/", (req, res) => {
-  res.send("se conecto a albumens");
-});
+router.get("/", pedirDatos);
 
 module.exports = router;
